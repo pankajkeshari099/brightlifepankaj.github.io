@@ -1,1 +1,0 @@
-# brightlifepankaj.github.io

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+#sidebar{
+  background-image: url('./image/mail1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+    </style>
+</head>
+<body>
+    <div id="header" class="sticky-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                  <h1 id="logo"><img src="./image/logo.jpg" alt="logo"> BRIGHTLIFE</h1>
+                </div>
+                <div class="col-md-8">
+                  <ul id="menu">
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-address-card"></i> About</a></li>
+                    <li class="active"><a href="contact.html"><i class="fas fa-phone"></i> Contact</a></li>
+                    <li><a href="job.html"><i class="fas fa-briefcase"></i> Job</a></li>
+                    <li><a href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="signup.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-user-plus"></i> SIGNUP
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #e74c3c;">
+                          <a class="dropdown-item" href="seeker_signup.html">Seeker</a>
+                          <a class="dropdown-item" href="employer_signup.html">Employer</a>
+                        </div>
+                      </li>
+                   </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="banner" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="banner-title">
+                        <h1 class="title">Dreams Comes True</h1>
+                        <p class="lead">Get your dream job with 100% secure and 1000 + jobs are available</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="sidebar">
+    <div class="container section">
+        <div class="row">
+         <div class="col-md-12">
+    <h2 class="section-head text-white">SEND US BY MAIL</h2>
+</div>  
+    <div class="col-6 m-auto">
+        <form action="" class="needs-validation" novalidate>
+          <div class="form-group">
+            <label for="uname"></label>
+            <input type="text" class="form-control" id="uname" placeholder="Enter username" name="" required>
+          </div>
+
+          <div class="form-group">
+            <label for="uname"></label>
+            <input type="text" class="form-control" id="uname" placeholder="Enter Email" name="" required>
+          </div>
+
+          <div class="form-group">
+            <label for="uname"></label>
+            <input type="text" class="form-control" id="uname" placeholder="website name" name="" required>
+          </div>
+
+          <div class="form-group">
+            <label for="comment"></label>
+            <textarea class="form-control" rows="5" id="comment" name="text"placeholder="Please Enter Your Message:" ></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="pwd"></label>
+            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+          </div>
+         <br>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+</div>
+</div>
+   <script>
+      // Disable form submissions if there are invalid fields
+      (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+          // Get the forms we want to add validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+      </script>
+   <div id="footer-sidebar">
+       <div class="container">
+           <div class="row">
+               <div class="col-sm-6 col-md-4">
+                   <div class="footer-widget">
+                       <h4>About BRIGHTLIFE</h4>
+                       <P>BRIGHTLIFE is a online job search website which provide a great opportunities to get a dreams job and to make dreams true.</P>
+                   <a href="about.html">Read More <i class="fas fa-angle-double-right"></i></a>    
+                </div>
+               </div>
+               <div class="col-sm-6 col-md-4">
+                <div class="footer-widget">
+                    <h4>Service overview</h4>
+                   <ul class="latest-news">
+                       <li><a href=""><i class="fas fa-angle-double-right"></i> 100% satisfaction for your job .</a></li>
+                       <li><a href=""><i class="fas fa-angle-double-right"></i> Provide a great opportunities for yor career.</a></li>
+                       <li><a href=""><i class="fas fa-angle-double-right"></i> 24 X 7 available with your support.</a></li>
+                       <li><a href=""><i class="fas fa-angle-double-right"></i> Easy way of getting Job.</a></li>
+                       <li><a href=""></a><i class="fas fa-angle-double-right"></i> Proper guidence.</a></li>
+                   </ul>
+                 </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="footer-widget">
+                    <h4>Company Address</h4>
+                   <address>
+                       <b>BRIGHTLIFE</b>
+                       Maheshpur Lahartara Varanasi, India<br>
+                       Phone : 8417071715<br>
+
+                   </address>
+                 </div>
+            </div>
+           </div>
+       </div>
+   </div>
+  <div id="footer1">
+   <div class="container">
+       <div class="row">
+           <div class="col-sm-6 col-md-6">
+               <div class="copyright text-center">
+               <p>Copyright@ 2020 Company Name</p>
+            </div>
+           </div>
+           <div class="col-sm-6 col-md-6 ">
+            <div class="copyright text-center">
+            <p>Designed By Pankaj Keshari</p>
+        </div>
+        </div>
+       </div>
+   </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<?php
+$host='localhost:3306';
+$user='root';
+$pass='';
+$dbname='jobseeker';
+$conn=mysqli_connect($host,$user,$pass,$dbname);
+if($conn)
+{?>
+<script>
+  alert("connection successfull");
+</script>
+<?php
+}
+else
+{
+ ?>
+  <script>
+alert("connection not successfull");
+</script>
+<?php
+}
+
+if (isset($_POST['submit'])) 
+{
+  $fname=$_POST['fname'];
+  $lname=$_POST['lname'];
+  $user=$_POST['uname'];
+  $email=$_POST['email'];
+  $pass=$_POST['password'];
+  $cpass=$_POST['password2'];
+  $contact=$_POST['contact'];
+  $age=$_POST['age'];
+  $address=$_POST['address'];
+  $gender=$_POST['gender'];
+  
+  $exp=$_POST['exp'];
+
+ 
+	$filename = $_FILES["file"]["name"];
+	$tempname = $_FILES["file"]["tmp_name"];	
+		$folder = "image/".$filename;
+		
+	echo $filename;
+  $sql="INSERT INTO `seeker`(`fname`, `lname`, `uname`, `email`, `pass`, `pass2`, `contact`, `age`, `address`, `gender`, `res`, `exp`) 
+  VALUES ('$fname','$lname','$user','$email','$pass','$cpass','$contact','$age','$address','$gender','$filename','$exp')";
+  $rest=mysqli_query($conn,$sql);
+  if($rest)
+  {
+    echo"data inserted";
+  } 
+  else{
+    die('not connect:'.mysqli_error());
+  }
+}
+
+?>

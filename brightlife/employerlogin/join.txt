@@ -1,0 +1,1 @@
+SELECT seeker.fname, seeker.fname, seeker.email,seeker.uname, seeker.contact, seeker.age,seeker.gender, seeker.address,seeker.res ,seeker.exp FROM seeker INNER JOIN final ON seeker.id=final.uid
